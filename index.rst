@@ -1,3 +1,9 @@
-pages:
-- Home: 'index.md'
-- About: 'about.md'
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpellsOfLatin Docs</title>
+</head>
+<body>
+
+</body>
+</html>
