@@ -1,1 +1,3 @@
-Hello
+pages:
+- Home: 'index.md'
+- About: 'about.md'
