@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>SpellsOfLatin Docs</title>
-</head>
-<body>
-
-</body>
-</html>
+docs/
+    index.md
+    user-guide/getting-started.md
+    user-guide/configuration-options.md
+    license.md
