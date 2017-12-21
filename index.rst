@@ -1,2 +1,1 @@
-docs/
-    index.md
+.. _a link: http://example.com/
