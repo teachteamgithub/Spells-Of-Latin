@@ -17,10 +17,13 @@ Spells Of Latin is filled with many different features. Below are just of few of
 - Volume Adjustment (Settings -> Quality)
 - Quality Adjustment (Settings -> Quality)
 - Music (Song: [Smile by Altimo](https://www.ninety9lives.com/music/smile/))
-- Latin Spell - Deus Ignalux (Heals Player)
-- Latin Spell- Ventilux Exillium (Makes Player Invisible)
 - Front and Back Flips to Allow Player to Dodge Spells
 - And Much More for you to discover in... Codiscite's Spells of Latin
+
+### Spells
+- Deus Ignalux (Heals Player)
+- Ventilux Exillium (Makes Player Invisible)
+- Aquilunagilis (Gives Player Super Speed)
 
 ## Frequently Asked Questions
 Here you'll see several questions we get asked quite a bit. Hopefully these will help resolve any possible confusion you may have!
