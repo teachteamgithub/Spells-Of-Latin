@@ -23,6 +23,7 @@ Spells Of Latin is filled with many different features. Below are just of few of
 ### Spells
 - Deus Ignalux (Heals Player)
 - Ventilux Exillium (Makes Player Invisible)
+- Terralumine Vocamurus (Summons Dirt Wall)
 - Aquilunagilis (Gives Player Super Speed)
 
 ## Frequently Asked Questions
