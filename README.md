@@ -1,6 +1,6 @@
 [![Spells_Of_Latin_Logo.png](https://s9.postimg.org/sgwmu8i33/Spells_Of_Latin_Logo.png)](#)
 
-Our first github-published [Unity3D](www.unity3d.com) project is here! We have been spending a long time working on this and our really proud to be presenting our first build. This document will describe and explain the wonderous features of this educational galore and you will may come out completely changed...
+Our first github-published [Unity3D](www.unity3d.com) project is here! We have been spending a long time working on this and our really proud to be presenting our first builds. This document will describe and explain the wonderous features of this educational masterpiece...
 
 ## Features and Functions
 Spells Of Latin is filled with many different features. Below are just of few of the marvels this game has to offer:
