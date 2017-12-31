@@ -1,7 +1,9 @@
 [![Spells_Of_Latin_Logo.png](https://s9.postimg.org/sgwmu8i33/Spells_Of_Latin_Logo.png)](http://spellsoflatin.ddns.net/)
 
-**[Website](https://codiscite.github.io/Spells-Of-Latin/)** | **[License](/LICENSE)** | **[Discord Server](https://discord.gg/bQqHxS7)**
-<span style=“color:green;”> text goes here</span>
+**[Website](https://codiscite.github.io/Spells-Of-Latin/)** | **[License](/LICENSE)**
+
+[![discord_logo.jpg](https://s9.postimg.org/3qhmb2zxb/discord_logo.jpg)](https://discord.gg/bQqHxS7)
+
 Our first github-published [Unity3D](www.unity3d.com) project is here! We have been spending a long time working on this and our really proud to be presenting our first builds. This document will describe and explain the wonderous features of this educational masterpiece...
 
 ## Features and Functions
