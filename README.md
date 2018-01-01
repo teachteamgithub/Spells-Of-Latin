@@ -28,7 +28,7 @@ Spells Of Latin is filled with many different features. Below are just of few of
 - Deus Ignalux (Heals Player)
 - Ventilux Exillium (Makes Player Invisible)
 - Terralumine Vocamurus (Summons Dirt Wall)
-- Aquilunagilis (Gives Player Super Speed)
+- Aquiluxagilis (Gives Player Super Speed)
 
 ## Frequently Asked Questions
 Here you'll see several questions we get asked quite a bit. Hopefully these will help resolve any possible confusion you may have!
@@ -37,7 +37,7 @@ Here you'll see several questions we get asked quite a bit. Hopefully these will
 **A.** Latin can sometimes come across as a difficult language and can be discouraging to students when learning it. This is a problem we strive to fix here at Codiscite. That's why we've put together this completely **FREE** open-source project for anyone to enjoy! Spells Of Latin brings the ideas of this ex-universal language by allowing players to contruct Latin spells using Latin roots and using these 'spells' to duel in a 3-dimensional virtual desert.
 
 ### Q. How do I set it up?
-**A.** Just download the zip file by selecting "Clone or download" and extract it and the build name inside! From there, you can double click to run the HTML file and you should be all set!
+**A.** No, not at all. Our team has worked really hard to make this game available online! All you have to do is click '[**PLAY**](https://codiscite.github.io/Spells-Of-Latin/game)' on the **[website](https://codiscite.github.io/Spells-Of-Latin/)** to discover the delights that await you!
 
 ### Q. How do I use it?
 **A.** Try it out by constructing a spell that has been added by selecting the 'Spell Workshop'. From here you can put together different roots to craft your own spell from root to acorn! Next at the main menu, click "Play" and then "Training" so that you can try out your spell! Repeat this process and explore the game to find where it will take you! :smiley:
