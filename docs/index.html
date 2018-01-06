@@ -3,6 +3,216 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="SpellsOfLatinIcon(1).ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+<style>
+/* The Modal (background) */
+#myBtn:hover {
+    margin-right: -8px;
+}
+
+#myBtn {
+    background-color: #358f61;
+    border: 0px;
+    position: static;
+    overflow: hidden;
+    float: right;
+    height: 42px;
+    margin-top: 75px;
+    margin-right: -105px;
+    transition: margin-right .25s;
+}
+
+#myBtn img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: -2px;
+    margin-left: -2px;
+    margin-top: -5px;
+    width: 35px;
+    height: 35px;
+}
+
+#myBtn p {
+    color: white;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-bottom: 18px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    transition: display 1s;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #389c69;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 27%;
+    height: 390px;
+	box-shadow: 0 12px 27.26px 1.74px rgba(0,0,0,0.4);
+	position: relative;
+}
+
+/* The Close Button */
+.close {
+    color: rgba(255,255,255,0.3);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color .25s, transform .25s;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.label{
+	color: white;
+	margin-bottom: 0px;
+}
+
+#email, #name, #msg{
+	border-width: 0px;
+	border-radius: 3px;
+	width: 97%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+#email{
+	height: 20px;
+	padding-left: 5px;
+}
+
+#name{
+	height: 20px;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+#top{
+	color: white;
+	margin-top: 0px;
+}
+
+#msg{
+	resize: none;
+	height: 90px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+#send{
+	color: white;
+	background-color: #3eab73;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 8px 26px;
+	border-radius: 3px;
+	float: right;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	transition: background-color .25s;
+}
+
+#send:hover,
+#send:focus{
+	cursor: pointer;
+	background-color: #44bb7e;
+}
+
+#desc{
+	color: white;
+	font-weight: 500;
+	margin-top: -5px;
+}
+
+</style>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var url = "https://discordapp.com/api/webhooks/399059991618650112/QlSUdrkv6brY349zRtGNQpmppwLKp8bq-2Ck4-HO27fATplTLsnipwocKljQJJdCsIi_"
+
+function send() {
+	var email = document.getElementById("email").value; 
+	var name = document.getElementById("name").value; 
+	var message = document.getElementById("msg").value; 
+
+	var params = "content=**Email: **" + email + "\n\n**Name: **" + name + "\n**Message: **" + message;
+
+	var xhr = new XMLHttpRequest();
+
+	xhr.open("POST", url, true);
+	console.log("Now!");
+
+	//Send the proper header information along with the request
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+	xhr.send(params);
+
+	document.getElementById("email").style.display = "none";
+	document.getElementById("name").style.display = "none";
+	document.getElementById("msg").style.display = "none";
+	document.getElementById("top").innerHTML = "Thank You!";
+	document.getElementById("desc").innerHTML = "We really appreciate your message and if you left an email, we will try to get back to you as soon as we can!";
+
+	var labels = document.getElementsByClassName("label");
+	for (var i = 0; i < labels.length; i++) {
+		 labels[i].style.display = "none";
+	}
+
+	document.getElementById("send").style.display = "none";
+	document.getElementsByClassName("modal-content")[0].style.height = "120px";
+}
+</script>
     
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Spells Of Latin</title>
@@ -56,6 +266,29 @@
 </script>
   
   <body>
+    
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn"><img src="Capture.png"><p>Contact Us<p></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+    	<h2 id="top">Contact Us</h2>
+    	<h4 id="desc">Use the form below to share your questions, ideas, comments and to report any bugs you've found.</h4>
+    	<p class="label">Email</p>
+		<input id="email" placeholder="gangnam@style.psy" name="email" type="email"><br>
+		<p class="label">Name</p>
+    	<input id="name" placeholder="Billy Bob Joe Bob" name="name" type="text"><br>
+    	<p class="label">Message</p>
+		<textarea id="msg" placeholder="I iz confuzled. It no workie :(" maxlength="7000" rows="7" name="message" type="text"></textarea>
+		<a id="send" onclick="send()">Send</a>
+    </form>
+  </div></div>
+    
     <section style="height: 400px; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#389c7b+0,389c64+100 */
 background: #389c7b; /* Old browsers */
 background: -moz-linear-gradient(left, #389c7b 0%, #389c64 100%); /* FF3.6-15 */
