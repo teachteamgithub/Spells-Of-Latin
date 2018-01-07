@@ -58,6 +58,20 @@
   
   <body>
     
+<div id="main" class="">
+		<p id="text">Share Spells Of Latin: </p>
+
+		<a id="facebook-btn" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fspellsoflatin.ddns.net%2F"><img style="width: 20px; margin-right: 5px; margin-bottom: -4px;" src="FacebookLogo.png">Share On Facebook</a>
+
+		<a id="twitter-btn" href="https://twitter.com/intent/tweet?text=&url=http%3A%2F%2Fspellsoflatin.ddns.net%2F"><img style="width: 20px; margin-right: 5px; margin-bottom: -2px;" src="TwitterLogo.png">Share On Twitter</a>
+
+		<a id="google-btn" href="https://plus.google.com/share?url=http%3A%2F%2Fspellsoflatin.ddns.net%2F"><img style="width: 22px; margin-right: 5px; margin-bottom: -2px;" src="GoogleLogo.png">Share On Google+</a>
+
+		<a id="pinterest-btn" href="https://www.pinterest.com/pin/create/button/?description=&url=http%3A%2F%2Fspellsoflatin.ddns.net%2F"><img style="width: 22px; margin-right: 5px; margin-bottom: -5px;" src="PinterestLogo.png">Share On Pinterest</a>
+
+		<button id="close">&times;</button>
+</div>
+	  
     <!-- Trigger/Open The Modal -->
 <button id="myBtn"><img src="Capture.PNG"><p>Contact Us<p></button>
 
@@ -327,6 +341,97 @@ s.setAttribute('data-timestamp', +new Date());
 	font-size: 15px;
 }
 
+#main{
+			width: 100%;
+			height: 32px;
+			margin-left: -10px;
+			text-align: center;
+			position: fixed;
+			background-color: #389c71;
+			color: white;
+			padding: 5px 42px;
+		}
+
+		.mainUp{
+			transition: 1s;
+			bottom: 0px;
+		}
+
+		.mainDown{
+			transition: .5s;
+			bottom: -45px;
+		}
+
+		#text{
+			display: inline;
+			line-height: 32px;
+			margin-left: -60px;
+			margin-right: 20px;
+		}
+
+		#facebook-btn{
+			color: white;
+			background-color: #39579A;
+			text-decoration: none;
+			padding: 6px 10px;
+			font-weight: 500;
+			border-radius: 2px;
+			margin-right: 2px;
+		}
+
+		#twitter-btn{
+			color: white;
+			background-color: #1DA8E2;
+			text-decoration: none;
+			padding: 6px 10px;
+			font-weight: 500;
+			border-radius: 2px;
+			margin-right: 2px;
+		}
+
+		#google-btn{
+			color: white;
+			background-color: #DF4901;
+			text-decoration: none;
+			padding: 6px 10px;
+			font-weight: 500;
+			border-radius: 2px;
+			margin-right: 2px;
+		} 
+
+		#pinterest-btn{
+			color: white;
+			background-color: #CA1E20;
+			text-decoration: none;
+			padding: 6px 10px;
+			font-weight: 500;
+			border-radius: 2px;
+			margin-right: 2px;
+		}
+		 
+		#close {
+		    position: absolute;
+		    right: 95px;
+		    vertical-align: middle;
+		    display: inline-block;
+		    font-size: 27px;
+		    opacity: 0.5;
+		    background: 0;
+		    color: white;
+		    border: 0;
+		    top: 0px;
+		    transition: opacity .25s, transform .25s, top .25s, right .25s;
+		}
+
+		#close:hover,
+		#close:focus{
+			opacity: 0.8;
+			transform: rotate(90deg);
+			top: 2px;
+			right: 90px;
+			cursor: pointer;
+		}
+	  
 </style>
 <script>
 // Get the modal
