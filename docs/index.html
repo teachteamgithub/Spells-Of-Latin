@@ -107,7 +107,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#389c7b', end
       <h2 class="project-tagline">Educational Unity-built game which teaches concepts of Latin in the wizardly staff-wielding world of Spells Of Latin</h2>
       
       <a style="margin-right: 5px;" target="_blank" href="https://github.com/Codiscite/Spells-Of-Latin" class="btn">View on GitHub</a>
-      <b><a style="padding: 1rem 1.75rem; font-size: 18px;" href="game" class="btn">PLAY</a></b>
+      <b><a style="padding: 1rem 1.75rem; font-size: 18px;" href="game" class="btn hvr-float-shadow">PLAY</a></b>
       <a target="_blank" href="https://discord.gg/bQqHxS7"><image style="margin-left: 5px; vertical-align: middle; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; width: 137px; padding-bottom: 3px;" src="discord_logo.jpg"></a>
       
     </section>
@@ -197,6 +197,49 @@ s.setAttribute('data-timestamp', +new Date());
   </body>
 	 
   <style>
+	  /* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+	  
 /* The Modal (background) */
 #myBtn:hover {
     right: -8px;
