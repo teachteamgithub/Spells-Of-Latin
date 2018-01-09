@@ -36,6 +36,56 @@
   })(window, document, '_gscq','script','//widgets.getsitecontrol.com/118860/script.js');
 </script>
     
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+		/*Old #playButton {
+		  width: 20vw;
+		  height: 6vw;
+		  position: absolute;
+		  left: 50vw;
+		  top: 50vh;
+		  transform: translate(-50%,-80%);
+		  font-family: 'Varela Round', sans-serif;
+		  font-size: 2vw;
+		  letter-spacing: 0.1em;
+		  color: #e8e8e8;
+		  border: none;
+		  border-radius: 10px;
+		  outline: none;
+		  background: linear-gradient(45deg,#389C64,teal);
+		  background-size: 400% 400%;
+		  cursor: pointer;
+		  transition: all 0.3s ease;
+		}*/
+
+		#playButton {
+		    transform: translate(-50%,-80%);
+		    font-size: 18px;
+		    letter-spacing: 0.1em;
+		    color: #e8e8e8;
+		    border: none;
+		    outline: none;
+		    background: linear-gradient(45deg,#389C64,teal);
+		    background-size: 400% 400%;
+		    cursor: pointer;
+		    transition: all 0.3s ease;
+		    vertical-align: middle;
+		}
+		  
+		#playButton:hover {
+			animation: gradient 10s ease infinite;
+			font-size: 2.05vw;
+		}
+		
+
+		@keyframes gradient {
+		  50% {
+		    background-position: 100% 0;
+		  }
+		}
+	  </style>
+	  
 <script type="application/ld+json">
 {"name":"SpellsOfLatin","description":"Educational Unity-built game which teaches concepts of Latin in the wizardly staff-wielding world of Spells Of Latin","author":null,"@type":"WebSite","url":"https://codiscite.github.io/SpellsOfLatin/","image":null,"publisher":null,"headline":"SpellsOfLatin","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
@@ -107,7 +157,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#389c7b', end
       <h2 class="project-tagline">Educational Unity-built game which teaches concepts of Latin in the wizardly staff-wielding world of Spells Of Latin</h2>
       
       <a style="margin-right: 5px;" target="_blank" href="https://github.com/Codiscite/Spells-Of-Latin" class="btn">View on GitHub</a>
-      <b><a style="padding: 1rem 1.75rem; font-size: 18px; margin-bottom: 6px;" href="game" class="btn hvr-float-shadow">PLAY</a></b>
+      <b><a style="padding: 1rem 1.75rem; font-size: 18px; margin-bottom: 6px;" href="game" id="playButton" class="hvr-float-shadow">PLAY</a></b>
       <a target="_blank" href="https://discord.gg/bQqHxS7"><image style="margin-left: 5px; vertical-align: middle; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; width: 137px; padding-bottom: 3px;" src="discord_logo.jpg"></a>
       
     </section>
