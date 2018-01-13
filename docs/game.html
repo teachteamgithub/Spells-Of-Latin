@@ -10,7 +10,7 @@
     <script src="Build/UnityLoader.js"></script>
     
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build7.3.0.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build7.3.1.json", {onProgress: UnityProgress});
     </script>
     
     <!-- Get Site Control -->
@@ -21,11 +21,11 @@
 </script>
     
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <a href="https://codiscite.github.io/Spells-Of-Latin/"><img style="transform: rotate(90deg); width: 75px; margin-top: 10px" src="method-draw-image.svg"></a>
     
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 1097px; height: 617px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
