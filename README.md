@@ -29,6 +29,7 @@ Spells Of Latin is filled with many different features. Below are just of few of
 - Ventilux Exillium (Makes Player Invisible)
 - Terralumine Vocamurus (Summons Dirt Wall)
 - Aquiluxagilis (Gives Player Super Speed)
+- Aquanox Vocastiria (Shoots Icicle)
 
 ## Frequently Asked Questions
 Here you'll see several questions we get asked quite a bit. Hopefully these will help resolve any possible confusion you may have!
