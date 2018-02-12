@@ -60,6 +60,10 @@
 		  transition: all 0.3s ease;
 		}*/
 
+    #main{
+      z-index: 1;
+    }
+
 		.project-tagline {
 		    font-family: 'Nunito', sans-serif;
 			font-weight: 600;
@@ -67,8 +71,9 @@
 	
 		#playButton {
 		    font-size: 18px;
+        border-radius: 2.5px;
 		    font-family: 'Nunito', sans-serif;
-    		    font-weight: 900;
+    		font-weight: 900;
 		    letter-spacing: 0.5px;
 		    color: #e8e8e8;
 		    border: none;
@@ -91,18 +96,17 @@
 		}
 	
 		@media screen and (max-width: 64em) {
-		 #logoBro{
-		  width: 100%;
-		 }
-			
-		 #main{
- 		  display: none;
-		  z-index: 1;
-		 }
-			
-		 #myBtn{
-		  display: none;	 
-		 }
+  		 #logoBro{
+  		  width: 100%;
+  		 }
+  			
+  		 #main{
+   		  display: none;
+  		 }
+  			
+  		 #myBtn{
+  		  display: none;	 
+  		 }
 		}		
 
 		@keyframes gradient {
