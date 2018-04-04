@@ -45,19 +45,21 @@ html{
 	font-family: "Nunito";
 	font-weight: bold;
 	font-size: 1.5vw;
-	opacity: 0.5;
 }
 
 #headerTop ul li a{
 	text-decoration: none;
-	color: white;
+	color: rgb(1, 1, 1, 0.5);
 }
 
 #logo{
 	width: 50%;
-	height: auto;
 	margin: auto;
 	padding-top: 7.5%;
+}
+
+#logo img{
+	width: 100%;
 }
 
 /* testimonials slider geometry */
