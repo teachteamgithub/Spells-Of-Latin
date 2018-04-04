@@ -36,6 +36,7 @@ html{
 #headerTop ul #selected{
 	opacity: 0.9;
 	padding-left: 7%;
+	color: white;
 }
 
 #headerTop ul li{
@@ -49,7 +50,8 @@ html{
 
 #headerTop ul li a{
 	text-decoration: none;
-	color: rgb(1, 1, 1, 0.5);
+	color: white;
+	opacity: 0.5%;
 }
 
 #logo{
