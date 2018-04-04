@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
+
+html{
+	overflow: hidden;
+	height: 100%;
+	background-repeat: no-repeat;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#389c7b+0,389c64+100 */
+	background: #389c7b; /* Old browsers */
+	background: -moz-linear-gradient(left, #389c7b 0%, #389c64 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #389c7b 0%,#389c64 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #389c7b 0%,#389c64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#389c7b', endColorstr='#389c64',GradientType=1 ); /* IE6-9 */
+}
+
+#headerTop{
+	position: fixed;
+	top: 0px;
+	background: rgba(0, 0, 0, 0.1);
+	height: 10%;
+	width: 100%;
+	margin-left: -10px;
+}
+
+#icon{
+	width: 3%;
+	top: 20%;
+	left: 2%;
+	position: absolute;
+}
+
+#headerTop ul{
+	padding-top: 0.75%;
+}
+
+#headerTop ul #selected{
+	opacity: 0.9;
+	padding-left: 7%;
+}
+
+#headerTop ul li{
+	display: inline;
+	list-style-type: none;
+	padding-left: 5%;
+	font-family: "Nunito";
+	font-weight: bold;
+	font-size: 1.5vw;
+	opacity: 0.5;
+}
+
+#headerTop ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#logo{
+	width: 50%;
+	height: auto;
+	margin: auto;
+	padding-top: 7.5%;
+}
+
+/* testimonials slider geometry */
+.tsl {
+	padding:1em;
+}
+.tsl-list {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+.tsl-item {
+	position:relative;
+	top:0;
+	left:100%;
+	margin-left:-100%;
+	width:100%;
+	float:left;
+	animation: tsl-fade-in-out 25s infinite;
+	animation-play-state:running;
+}
+
+/* lets hide all items from second */
+.tsl-item + .tsl-item {
+	opacity:0;
+}
+
+/* animation */
+
+/* animation shift */
+/* negative delay needed to pause works correctly on hover */
+.tsl-item:nth-child(2) {
+	animation-delay: -20s;
+}
+.tsl-item:nth-child(3) {
+	animation-delay: -15s;
+}
+.tsl-item:nth-child(4) {
+	animation-delay: -10s;
+}
+.tsl-item:nth-child(5) {
+	animation-delay: -5s;
+}
+/*
+we have 5 items.
+we want each slide plays ≈5s
+
+each slide will play 1/5 of animation = 20%
+1% of animation is for transitions (fading)
+*/
+
+@keyframes tsl-fade-in-out {
+	0% {
+		opacity:0;
+		z-index:2;
+	}
+	1% {
+		opacity:1;
+		z-index:2;
+	}
+	20% {
+		opacity:1;
+	}
+	21% {
+		opacity:0;
+		z-index:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+/* pause on hover */
+.tsl-list:hover .tsl-item {
+	animation-play-state:paused;
+}
+
+/* testimonials theme */
+.tsl-content{
+	width: 75%;
+	margin: auto;
+	padding-top: 2%;
+}
+
+.tsl-content p {
+	margin-top:0;
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 2vw;
+	text-align: center;
+}
+/* thats all */
+
+
+#PlayBTN_Div{
+	margin-top: 2%;
+	transition: all .5s;
+}
+
+#playBTN{
+	color: white;
+	background: none;
+	
+	font-family: "Nunito";
+	font-weight: bold;
+	font-size: 2.5vw;
+	
+	text-decoration: none;
+	
+	border: solid 7.5px white;
+	border-radius: 190px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 55px;
+	padding-right: 55px;
+
+	transition: all .25s;
+}
+
+#playBTN:hover{
+	color: #389c70;
+	background: white;
+	border-color: #3ead7d;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+#copyright{
+	color: white;
+	left: 50%;
+	margin-left: -17%;
+	bottom: 0px;
+	position: fixed;
+	text-align: center;
+	padding-top: 8%;
+	font-family: "Nunito";
+	font-weight: 600;
+	font-size: 1.35vw;
+	opacity: 0.65;
+}
+
+#fork-github{
+	position: fixed;
+	height: 25px;
+	
+	bottom: 0px;
+	margin-left: 100px;
+
+	background: white;
+
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+
+	padding: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	transition: all 0.25s;
+}
+
+#fork-github a{
+	text-decoration: none;
+	font-weight: 700;
+	font-family: "Nunito";
+	font-size: 1.1vw;
+	color: #242F37;
+}
+
+#fork-github:hover{
+	height: 35px;
+	cursor: pointer;
+}
+
+#license{
+	text-decoration: none;
+	color: white;
+	opacity: .95;
+
+	position: fixed;
+	bottom: 2%;
+	right: 5%;
+
+	font-weight: 400;
+	font-size: 2vw;
+	font-family: "Nunito";
+
+	transition: all 0.25s;
+}
+
+#license:hover{
+	opacity: 1;
+	bottom: 2.5%;
+}
+
+.link-center{
+      position: relative;
+      text-decoration: none;
+    }
+
+    .link-center:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .link-center:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    .link {
+      position: relative;
+    }
+
+    .link:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%; 
+      border-bottom: 2px solid rgba(1, 1, 1, 0.5);
+      transition: 0.4s;
+    }
+
+    .link:hover:after {
+     width: 100%;
+    }
+
+#patreonIcon{
+	position: fixed;
+	top: 3%;
+	right: 2%;
+	opacity: 0.75;
+}
+
+/* The Modal (background) */
+#contactBTN {
+    background-color: #358f61;
+    border: 0px;
+    position: fixed;
+    overflow: hidden;
+    float: right;
+    height: 75px;
+    top: 20%;
+    right: -160px;
+    transition: right .25s;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#contactBTN:hover {
+    right: -8px;
+    cursor: pointer;
+}
+
+#contactBTN img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: -5px;
+    width: 48px;
+}
+
+#contactBTN p {
+    color: white;
+    font-weight: 700;
+    font-family: 'Nunito';
+    letter-spacing: .5px;
+    font-size: 1.25vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 22.5px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    transition: display 1s;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #389c69;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 25%;
+    height: 47.5%;
+	box-shadow: 0 12px 27.26px 1.74px rgba(0,0,0,0.4);
+	position: relative;
+	font-family: 'Nunito';
+}
+
+/* The Close Button */
+.close {
+    color: rgba(255,255,255,0.3);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color .25s, transform .25s;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.label{
+	color: white;
+	margin-bottom: 0px;
+}
+
+#email, #name, #msg{
+	border-width: 0px;
+	border-radius: 3px;
+	width: 97%;
+    font-size: 13px;
+}
+
+#email{
+	height: 20px;
+	padding-left: 5px;
+}
+
+#name{
+	height: 20px;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+#top{
+	color: white;
+	margin-top: 0px;
+}
+
+#msg{
+	resize: none;
+	height: 150px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+#send{
+	color: white;
+	background-color: #3eab73;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 8px 26px;
+	border-radius: 3px;
+	float: right;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	transition: background-color .25s;
+}
+
+#send:hover,
+#send:focus{
+	cursor: pointer;
+	background-color: #44bb7e;
+}
+
+#desc{
+	color: white;
+	font-weight: 600;
+	margin-top: -5px;
+	font-size: 15px;
+}
