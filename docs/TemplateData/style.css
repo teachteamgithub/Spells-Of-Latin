@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
+
+html{
+	overflow: hidden;
+	height: 100%;
+	background-repeat: no-repeat;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,ff875b+100 */
+	background: #FF9849; /* Old browsers */
+	background: -moz-linear-gradient(left, #FF9849 0%, #ff875b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #FF9849 0%,#ff875b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #FF9849 0%,#ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9849', endColorstr='#ff875b',GradientType=1 ); /* IE6-9 */
+}
+
 .webgl-content * {border: 0; margin: 0; padding: 0}
-.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content {background: white; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
@@ -13,6 +28,6 @@
 
 .webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;} 
 .webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;} 
-.webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .webgl-logo {padding-left: 15px; font-weight: 600; font-size: 1.25vw; width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
