@@ -207,19 +207,18 @@ each slide will play 1/5 of animation = 20%
 
 #fork-github{
 	position: fixed;
-	height: 25px;
-	
+	height: 3.5%;
 	bottom: 0px;
-	margin-left: 100px;
+	margin-left: 5%;
 
 	background: white;
 
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 
-	padding: 12px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0.65%;
+	padding-left: 0.7%;
+	padding-right: 0.7%;
 
 	transition: all 0.25s;
 }
@@ -316,7 +315,7 @@ each slide will play 1/5 of animation = 20%
     position: fixed;
     overflow: hidden;
     float: right;
-    height: 75px;
+    height: 10.5%;
     top: 20%;
     right: -160px;
     transition: right .25s;
@@ -335,8 +334,8 @@ each slide will play 1/5 of animation = 20%
     display: inline-block;
     margin-right: 20px;
     margin-left: 15px;
-    margin-top: -5px;
-    width: 48px;
+    margin-top: -1%;
+    height: 45%;
 }
 
 #contactBTN p {
