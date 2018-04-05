@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1120 -908 800 800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-SpellsOfLatinIcon);
+      }
+
+      .cls-2 {
+        fill: #e46231;
+        stroke: #fff;
+        stroke-width: 90px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+    <clipPath id="clip-SpellsOfLatinIcon">
+      <rect x="1120" y="-908" width="800" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="SpellsOfLatinIcon" class="cls-1">
+    <rect class="cls-5" x="1120" y="-908" width="800" height="800"/>
+    <g id="Rectangle_10" data-name="Rectangle 10" class="cls-2" transform="translate(1520.222 -908) rotate(45)">
+      <rect class="cls-3" width="566" height="566"/>
+      <rect class="cls-4" x="45" y="45" width="476" height="476"/>
+    </g>
+  </g>
+</svg>
