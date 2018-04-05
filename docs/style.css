@@ -5,12 +5,12 @@ html{
 	height: 100%;
 	background-repeat: no-repeat;
 
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#389c7b+0,389c64+100 */
-	background: #389c7b; /* Old browsers */
-	background: -moz-linear-gradient(left, #389c7b 0%, #389c64 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #389c7b 0%,#389c64 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #389c7b 0%,#389c64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#389c7b', endColorstr='#389c64',GradientType=1 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,FE9E7B+100 */
+	background: #FF9849; /* Old browsers */
+	background: -moz-linear-gradient(left, #FF9849 0%, #FE9E7B 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #FF9849 0%,#FE9E7B 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #FF9849 0%,#FE9E7B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9849', endColorstr='#FE9E7B',GradientType=1 ); /* IE6-9 */
 }
 
 #headerTop{
