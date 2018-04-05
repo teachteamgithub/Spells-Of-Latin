@@ -7,10 +7,7 @@ html{
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,ff875b+100 */
 	background: #FF9849; /* Old browsers */
-	background: -moz-linear-gradient(left, #FF9849 0%, #ff875b 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #FF9849 0%,#ff875b 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #FF9849 0%,#ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9849', endColorstr='#ff875b',GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(to right, #FFA763 0%,#ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #headerTop{
@@ -185,10 +182,10 @@ each slide will play 1/5 of animation = 20%
 }
 
 #playBTN:hover{
-	color: #389c70;
 	background: white;
 	border-color: #3ead7d;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+	box-shadow: 0px 0px 12.5px rgb(102, 102, 102);
+	background: linear-gradient(to right, #389C7B, #389c70);
 }
 
 #copyright{
@@ -310,7 +307,7 @@ each slide will play 1/5 of animation = 20%
 
 /* The Modal (background) */
 #contactBTN {
-    background-color: #E46231;
+    background-color: #e57952;
     border: 0px;
     position: fixed;
     overflow: hidden;
@@ -368,7 +365,7 @@ each slide will play 1/5 of animation = 20%
 
 /* Modal Content */
 .modal-content {
-    background-color: #389c69;
+    background: linear-gradient(to bottom left, #ff7e5f 0%, #fba97c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin: auto;
     padding: 20px;
     border-radius: 5px;
@@ -426,14 +423,14 @@ each slide will play 1/5 of animation = 20%
 
 #msg{
 	resize: none;
-	height: 150px;
+	height: 130px;
 	padding-top: 5px;
 	padding-left: 5px;
 }
 
 #send{
 	color: white;
-	background-color: #3eab73;
+	background: linear-gradient(to right, #4ECDC4 0%, #556270 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	font-weight: 600;
 	letter-spacing: 1px;
 	padding: 8px 26px;
@@ -442,13 +439,14 @@ each slide will play 1/5 of animation = 20%
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
-	transition: background-color .25s;
+	transition: all .25s;
+	box-shadow: 0px 4px 20px #1C9F96E6;
 }
 
 #send:hover,
 #send:focus{
 	cursor: pointer;
-	background-color: #44bb7e;
+	bottom: 20px;
 }
 
 #desc{
