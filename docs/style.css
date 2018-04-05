@@ -5,12 +5,12 @@ html{
 	height: 100%;
 	background-repeat: no-repeat;
 
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,FE9E7B+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,ff875b+100 */
 	background: #FF9849; /* Old browsers */
-	background: -moz-linear-gradient(left, #FF9849 0%, #FE9E7B 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #FF9849 0%,#FE9E7B 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #FF9849 0%,#FE9E7B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9849', endColorstr='#FE9E7B',GradientType=1 ); /* IE6-9 */
+	background: -moz-linear-gradient(left, #FF9849 0%, #ff875b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #FF9849 0%,#ff875b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #FF9849 0%,#ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9849', endColorstr='#ff875b',GradientType=1 ); /* IE6-9 */
 }
 
 #headerTop{
@@ -310,7 +310,7 @@ each slide will play 1/5 of animation = 20%
 
 /* The Modal (background) */
 #contactBTN {
-    background-color: #358f61;
+    background-color: #E46231;
     border: 0px;
     position: fixed;
     overflow: hidden;
