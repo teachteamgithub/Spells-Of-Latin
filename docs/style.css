@@ -270,7 +270,7 @@ each slide will play 1/5 of animation = 20%
       height: 3px;
       bottom: 0;
       left: 0;
-      background-color: white;
+      background-color: #ffffff80;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
