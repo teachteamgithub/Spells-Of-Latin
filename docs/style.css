@@ -33,12 +33,6 @@ html{
 	padding-top: 0.75%;
 }
 
-#headerTop ul #selected{
-	opacity: 0.9;
-	padding-left: 7%;
-	color: white;
-}
-
 #headerTop ul li{
 	display: inline;
 	list-style-type: none;
@@ -51,6 +45,12 @@ html{
 #headerTop ul li a{
 	text-decoration: none;
 	color: #ffffff80;
+}
+
+#headerTop ul #selected{
+	opacity: 0.9;
+	padding-left: 7%;
+	color: white;
 }
 
 #logo{
