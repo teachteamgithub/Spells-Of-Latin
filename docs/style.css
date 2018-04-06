@@ -7,7 +7,7 @@ html{
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,ff875b+100 */
 	background: #FF9849; /* Old browsers */
-	background: linear-gradient(to right, #FFA763 0%,#ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to right, #FFA763 0%, #ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #headerTop{

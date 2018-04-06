@@ -7,10 +7,7 @@ html{
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,ff875b+100 */
 	background: #FF9849; /* Old browsers */
-	background: -moz-linear-gradient(left, #FF9849 0%, #ff875b 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #FF9849 0%,#ff875b 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #FF9849 0%,#ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9849', endColorstr='#ff875b',GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(to right, #FFA763 0%, #ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
