@@ -35,6 +35,8 @@
 		    console.log("Curious one, you are. Nice job finding this! 😃");
 		</script>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 		<script type="application/ld+json">
 		{"name":"SpellsOfLatin","description":"Educational Unity-built game which teaches concepts of Latin in the wizardly staff-wielding world of Spells Of Latin","author":null,"@type":"WebSite","url":"https://codiscite.github.io/SpellsOfLatin/","image":null,"publisher":null,"headline":"SpellsOfLatin","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}
 		</script>
@@ -136,7 +138,7 @@
 		  </ul>
 		</div>
 		
-		<div id="PlayBTN_Div"><center><a href="game" id="playBTN">PLAY FOR FREE</a></center></div>
+		<div id="PlayBTN_Div"><center><a onmouseover="playTextChange()" onmouseout="playTextRevert()" href="game" id="playBTN">PLAY FOR FREE</a></center></div>
 	</body>
 	
 	<div id="fork-github"><a href="https://github.com/Codiscite/Spells-Of-Latin/fork" target="_blank">Fork Us On Github</a></div>
@@ -205,5 +207,20 @@
 				document.getElementById("send").style.display = "none";
 				document.getElementsByClassName("modal-content")[0].style.height = "175px";
 			}
+	</script>
+
+	<script type="text/javascript">
+		function playTextChange() {
+			setTimeout(function() {
+		    	document.getElementById("playBTN").innerHTML = "LETS'A GO!";
+		    	setTimeout(function() {
+		    		document.getElementById("playBTN").innerHTML = "CLICK ME ALREADY!";
+		    	}, 5000);
+			}, 5000);
+		}
+
+		function playTextRevert() {
+		    document.getElementById("playBTN").innerHTML = "PLAY FOR FREE";
+		}
 	</script>
 </html>
