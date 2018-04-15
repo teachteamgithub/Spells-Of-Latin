@@ -6,23 +6,22 @@ html{
 	background-repeat: no-repeat;
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#FF9849+0,ff875b+100 */
-	background: #FF9849; /* Old browsers */
-	background: linear-gradient(to right, #FFA763 0%, #ff875b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #E3E3E3; /* Old browsers */
 }
 
 #headerTop{
 	position: fixed;
 	top: 0px;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.05);
 	height: 10%;
 	width: 100%;
 	margin-left: -10px;
 }
 
 #icon{
-	width: 3%;
-	top: 20%;
-	left: 2%;
+	width: 4%;
+	top: 12%;
+	left: 1.5%;
 	position: absolute;
 }
 
@@ -41,13 +40,12 @@ html{
 
 #headerTop ul li a{
 	text-decoration: none;
-	color: #ffffff80;
+	color: #242F3780;
 }
 
 #headerTop ul #selected{
 	opacity: 0.9;
-	padding-left: 7%;
-	color: white;
+	color: #242F37;
 }
 
 #logo{
@@ -159,9 +157,7 @@ each slide will play 1/5 of animation = 20%
 	margin-top: 2%;
 	transition: all .5s;
 	pointer-events: none;
-	animation: pulse 3s infinite;
-/*	animation-timing-function: ease-in-out;
-*/}
+}
 
 #playBTN{
 	color: white;
@@ -185,18 +181,6 @@ each slide will play 1/5 of animation = 20%
 	transition: all .25s;
 }
 
-@keyframes pulse {
-	0% {
-		margin-top: 2%;
-	}
-	50% {
-		margin-top: 1.5%;
-	}
-	100%{
-		margin-top: 2%;
-	}
-}
-
 #playBTN:hover{
 	margin-bottom: 10px;
 
@@ -217,7 +201,7 @@ each slide will play 1/5 of animation = 20%
 }
 
 #copyright{
-	color: white;
+	color: #242F37;
 	left: 50%;
 	margin-left: -17%;
 	bottom: 0px;
@@ -228,6 +212,26 @@ each slide will play 1/5 of animation = 20%
 	font-weight: 600;
 	font-size: 1.35vw;
 	opacity: 0.65;
+}
+
+/*medium+ screen sizes*/
+@media (min-width:992px) {
+    #fork-github, #copyright, #license {
+        display: block !important;
+    }
+}
+ 
+/*//small screen sizes*/
+@media (max-width: 991px) {
+    #fork-github, #copyright, #license{
+        display:none !important;
+    }
+}
+
+@media (max-width: 700px) {
+    #contactBTN{
+        display:none !important;
+    }
 }
 
 #fork-github{
@@ -263,7 +267,7 @@ each slide will play 1/5 of animation = 20%
 
 #license{
 	text-decoration: none;
-	color: white;
+	color: #242F37;
 	opacity: .95;
 
 	position: fixed;
@@ -294,7 +298,7 @@ each slide will play 1/5 of animation = 20%
       height: 3px;
       bottom: 0;
       left: 0;
-      background-color: #ffffff80;
+      background-color: #242F3780;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
