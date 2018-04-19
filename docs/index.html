@@ -27,7 +27,7 @@
 		<meta property="og:site_name" content="Spells-Of-Latin" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
 
@@ -36,7 +36,34 @@
 		<script type="text/javascript">
 		    console.log("Curious one, you are. Nice job finding this! 😃");
 		</script>
+		
+		<!-- 3. Instantiate clipboard by passing a HTML element -->
+	    <script>
+	    function copyTextToClipboard(text) {
+			var textArea = document.createElement("textarea");
+			textArea.value = text;
 
+			document.body.appendChild(textArea);
+			textArea.focus();
+			textArea.select();
+
+			try {
+				var successful = document.execCommand('copy');
+				var msg = successful ? 'successful' : 'unsuccessful';
+				console.log('Copying text command was ' + msg);
+				
+				linkBTN = document.getElementById("copyLinkBTN")
+				linkBTN.className = "iconClicked";
+				console.log(linkBTN.className);
+
+			} catch (err) {
+				console.log('Oops, unable to copy');
+			}
+
+			document.body.removeChild(textArea);
+		}
+	    </script>
+	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<script type="application/ld+json">
@@ -82,6 +109,8 @@
 				<li><a data-balloon-length="medium" data-balloon="Sorry for the inconvenience, but we just released our new site redesign and are still working on this page." data-balloon-pos="down" href="#" class="link-center">FAQ</a></li>
 				<li><a class="link-center dbox-donation-button" href="https://donorbox.org/spells-of-latin?amount=5">DONATE</a></li>
 			</ul>
+			<!-- Trigger -->
+			<button id="copyLinkBTN" class="" onclick="copyTextToClipboard('http://spellsoflatin.com/');"><i class="fa fa-link"></i></button>
 			<a href="https://www.patreon.com/Codiscite" id="patreonIcon"><img src="MiniPatreonLogo.png"></a>
 		</section>
 
@@ -246,9 +275,14 @@
 		</a>
 
 	    <a class="menu-item twitter_share_btn" href="#"> <!-- <<< Share Buttons -->
-		    <i class="fa fa-twitter" aria-hidden="true"></i>
+		    <i class="fa fa-twitter" aria-hidden="true"></i><!-- Trigger -->
 		    <span></span>
 		</a>
+
+		<!-- <a class="btn" data-clipboard-text="http://spellsoflatin.com/" class="menu-item twitter_share_btn" href="#"> <<< Share Buttons
+		    <i class="fa fa-twitter" aria-hidden="true"></i><!-- Trigger
+		    <span></span>
+		</a> -->
 	</nav>
   </div> <!-- end wrapper-->
 </html>
